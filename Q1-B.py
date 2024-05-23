@@ -1,14 +1,14 @@
 def factorial(n):
-    result = 1
+    res = 1
     for i in range(1, n + 1):
-        result *= i
-    return result
+        res *= i
+    return res
 
-num = int(input("Enter a number to calculate its factorial: "))
-if num < 0:
-    print("Factorial is not defined for negative numbers.")
-elif num == 0:
+numb = int(input("Enter a number : "))
+if numb < 0:
+    print("Factorial is not defined.")
+elif numb == 0:
     print("The factorial of 0 is 1")
 else:
-    result = factorial(num)
-    print(f"The factorial of {num} is {result}")
+    res = factorial(numb)
+    print(f"The factorial of {numb} is {res}")
