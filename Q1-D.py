@@ -1,2 +1,2 @@
-d = {x: x+1 for x in range(11)}
+d = {k: v for k, v in zip(range(11), range(1, 12))}
 print(d)
